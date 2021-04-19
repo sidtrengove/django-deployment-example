@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<!-- This is an example of how much of a mess you can make the indentation and spacing and it still work -->
+
+{% extends "basic_app/base.html" %}
+{%block body_block%}
+    <h1>Welcome to index</h1>
+    <!-- <h1>this is index.html showing</h1> -->
+    <h1>{{ text|cut:'hello' }}</h1>
+    <h1>{{ number|add:"99" }}</h1>
+    {% endblock %}
